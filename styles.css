@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+html {
+  background-color:#F0ECEE;
+  width: 100%;
+  font-family: 'Fira Sans', sans-serif;
+  color: black; 
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.title{
+  font-weight: 400; 
+  font-size: 22px; 
+  margin-bottom: 10px;
+}
+
+.emphasis{
+  color: #FF4850; 
+}
+
+body{
+  margin: 16px; 
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #88898B; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF4850;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+  padding-left: 0px;
+  font-weight: 300;
+  font-size: 16px; 
+}
+
+button {
+  background-color:#FF4850; 
+  border-radius: 15px;
+  color: #F0ECEE;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 16px; 
+  width: 100%; 
+  margin-top: 10px; 
+}
+button:hover {
+  background-color: #CCC; 
+  color: #FF4850; 
+}
+
+            /* bottom half of website */
+
+.content {
+  font-size: 30px; 
+  font-weight: 600; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  flex-grow: 1;
+}
+.subcontent{
+  color: #88898B; 
+  font-weight: 300;
+  font-size: 16px; 
+  margin: 16px 0px; 
+}
+
+          /* for desktop version */
+@media(min-width: 768px) {
+  .nav-bar {
+    flex-direction: row; 
+    line-height: 40px; 
+  }
+  .header {
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+  body {
+    margin: 16px 48px;
+  }
+  html {
+    background-image: url("bulldog.jpg");
+    width: auto; 
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 110%;
+  }
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .title {
+    line-height: 40px; 
+    margin-bottom: 0px;
+  }
+  button{
+    margin-top: 0px;
+    width: auto; 
+  }
+          /* bottom half of website */
+  .content {
+    width: 50%; 
+  }
+  .subcontent{
+    margin: 32px 0px;
+  }
+
+}
